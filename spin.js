@@ -177,6 +177,8 @@
         target.insertBefore(el, target.firstChild||null)
       }
 
+      if (o.display) { css(el, { display: o.display }); }
+
       el.setAttribute('role', 'progressbar')
       self.lines(el, self.opts)
 
